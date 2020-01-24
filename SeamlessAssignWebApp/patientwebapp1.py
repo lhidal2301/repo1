@@ -4,7 +4,7 @@ from flask import Flask
 app = Flask(__name__)
 @app.route("/")
 def patientpage():
-    with open("C:/Users/lykam/OneDrive/Documents/SeamlessMD/patient.json") as patientfile:
+    with open("repo1/patient.json") as patientfile:
         data = json.load(patientfile)
         return data
 
